@@ -11,9 +11,9 @@ import com.demo.repository.EmployeeRepository;
 
 @Service
 public class EmployeeService {
-	@Autowired
-	private EmployeeRepository employeeRepository;
 	
+	@Autowired
+	private EmployeeRepository employeeRepository;	
 	
 	public List<EmployeeModel> getAllEmploys()
 	{
@@ -25,5 +25,10 @@ public class EmployeeService {
 	public void addEmployee(EmployeeModel employeeModel) {
 		employeeRepository.save(employeeModel);		
 	}
+
+	public void delete(int id) {	
+		employeeRepository.deleteById(id);	
+	}
+	
 
 }
