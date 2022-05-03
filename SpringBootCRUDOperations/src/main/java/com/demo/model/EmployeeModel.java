@@ -1,6 +1,13 @@
 package com.demo.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table (schema="mysql1", name="record")
 public class EmployeeModel {
+	@Id
 	private int id ;
 	private String name ;
 	private String address;
