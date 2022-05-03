@@ -21,5 +21,9 @@ public class EmployeeService {
 		employeeRepository.findAll().forEach(empModel::add);
 		return empModel;
 	}
+	
+	public void addEmployee(EmployeeModel employeeModel) {
+		employeeRepository.save(employeeModel);		
+	}
 
 }
