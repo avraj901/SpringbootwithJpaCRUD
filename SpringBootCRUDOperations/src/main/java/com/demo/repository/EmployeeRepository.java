@@ -1,4 +1,4 @@
-package com.demo.service;
+package com.demo.repository;
 
 public class EmployeeRepository {
 
